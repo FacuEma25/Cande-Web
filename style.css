@@ -111,6 +111,18 @@ img{
     display: none;
 }
 
+/* MENU VERTICAL */
+.menu-vertical{
+    position: absolute;
+    display: none;
+    width: 200px;
+    background-color: var(--menu);
+}
+
+.menu-horizonal li:hover .menu-vertical{
+    display: block;
+} 
+
 /*HEADER*/
 
 header{
