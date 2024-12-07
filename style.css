@@ -119,6 +119,10 @@ img{
     background-color: var(--menu);
 }
 
+.menu-horizonal {
+    transition: .8s;
+}
+
 .menu-horizonal li:hover .menu-vertical{
     display: block;
 } 
@@ -300,22 +304,49 @@ p{
 
 /* LOGOS */
 .logos{
-    padding: 25px;
+    background-color: var(--principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll img{
+    width: 150px;
+    transition: .5s;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.scroll img:not(:hover){
+    filter: grayscale(100%);
+}
+
+.scroll{
     position: relative;
     display: flex;
-    align-items: center;
+    overflow: hidden;
+    mask-image: linear-gradient(90deg, transparent, #fdf4e3 20%, #fdf4e3 80%, transparent);
+}
+
+.scroll div{
+    white-space: nowrap;
+    animation: animate 30s linear infinite;
+    display: flex;
     justify-content: center;
-    gap: 150px;
-    margin-bottom: 100px;
+    align-items: center;
 }
 
-.logos img{
-    width: 150px;
+@keyframes animate {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
 }
 
-.logos{
-    background: rgb(208,126,118);
-    background: linear-gradient(243deg, rgba(208,126,118,1) 0%, rgba(109,54,48,1) 100%);
+.scroll:hover div{
+    animation-play-state: paused;
 }
 
 /* NOSOTROS */
