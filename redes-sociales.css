@@ -296,6 +296,11 @@ main{
     gap: 50px;
 }
 
+/* TACHADO */
+.card-1 .promos-info .tachado{
+    text-decoration:line-through;
+}
+
 .card-1{
     background-color: var(--letra);
     color: white;
@@ -309,16 +314,19 @@ main{
 .content h2{
     font-family: var(--font-general);
     font-size: 3rem;
+    padding-bottom: 15px;
 }
 
-.card-1 .content h4{
+.card-1 .precio h4{
     font-family: var(--font-general);
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: white;
     padding-bottom: 25px;
+    text-align: center;
+    padding-top: 15px;
 }
 
-.card-1 .content h4::before{
+.card-1 .precio h4::before{
     content: '$';
 }
 
@@ -350,6 +358,26 @@ main{
     background-color: var(--rosa);
 }
 
+.box-2{
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 0;
+    background-image: url(img/lugares2.png);
+    margin: 25px 0;
+    padding-bottom: 50px;
+    color: white;
+}
+
+.box-2 h4{
+    font-family: var(--font-general);
+    font-size: 3rem;
+    padding: 25px 0;
+}
+
+.box-2 p{
+    font-size: 1.5rem;
+}
+
 /* TRABAJO */
 
 .trabajo-content{
@@ -376,6 +404,52 @@ main{
 }
 
 /* FINAL */
+.lugares-content{
+    background-image: url(img/lugares2.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    text-align: center;
+    position: relative;
+}
+
+.lug-text{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.lug-text h2{
+    font-size: 2.5rem;
+    font-family: var(--font-general);
+    padding-bottom: 25px;
+}
+
+.lug-text a{
+    background-color: var(--botones);
+    font-size: 1.5rem;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+
+.lug-text a:hover{
+    background-color: white;
+    color: var(--botones);
+    scale: 1.1;
+    transform: translateY(10px)
+}
+
+/* Primer intento q no se aprobo
 .final-content{
     padding: 150px 0px;
     justify-content: center;
@@ -610,4 +684,115 @@ footer i{
 footer p{
     color: var(--principal);
     font-size: 1rem;
+}
+
+@media (max-width: 900px){
+    .menu{
+        padding: 15px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        background-color: var(--menu);
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .menu-vertical{
+        z-index: 100;
+        background-color: var(--menu);
+    }
+
+    .menu .logo{
+        padding: 0 25px 0 25px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .main-img{
+        display: none;
+    }
+
+    .planes-container{
+       display: flex;
+       flex-direction: column;
+       gap: 50px;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        margin: 0 40px;
+    }
+
+    .box-2 h4{
+        font-size: 2.5rem;
+    }
+
+    .box-2 p{
+        font-size: 1.2rem;
+    }
+
+    .trabajo-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .text-trabajo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .text-trabajo p{
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .footer-info1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-text-1{
+        padding: 0 50px;
+    }
+
 }

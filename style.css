@@ -734,8 +734,8 @@ footer p{
         gap: 0px;
     }
 
-    .services-container p{
-        padding: 0 100px;
+    .services-1{
+        width: 300px;
     }
 
     .services-contend .services-1{
@@ -743,9 +743,13 @@ footer p{
     }
 
     .services-contend .title-large{
-        padding: 0 150px;
+        padding: 0 20px;
     }
 
+    .bottom-top{
+        position: relative;
+        top: -25px;
+    }
     .nosotros{
         display: flex;
         flex-direction: column;
