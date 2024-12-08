@@ -168,7 +168,7 @@ main{
 .planes-content{
     color: var(--menu);
     background-color: var(--letra);
-    margin: 150px auto;
+    margin: 70px auto;
     text-align: center;
 }
 
@@ -280,6 +280,42 @@ main{
 }
 
 /* PROMOS */
+/* Carteles */
+.carteles{
+    position: relative;
+}
+
+.box-cartel{
+    background-color: var(--violeta);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: block;
+    position: fixed;
+}
+
+.cartel-1{
+    position: absolute;
+    left: 620px;
+    bottom: -30px;
+    transform: rotate(25deg);
+}
+
+.cartel-2{
+    position: absolute;
+    left: 1080px;
+    bottom: -30px;
+    transform: rotate(25deg);
+}
+
+.cartel-3{
+    background-color: black;
+    position: absolute;
+    left: 1520px;
+    bottom: -30px;
+    transform: rotate(25deg);
+}
+
 .container-2{
     max-width: 1300px;
     /*0 arriba y abajo - Izq y der automatico al centro*/
