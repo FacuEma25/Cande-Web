@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --header-font: "EB Garamond";
+    --font-general: "Playfair Display", serif;
+    --font-text: "Poppins", sans-serif;
+    --principal: #fdf4e3;
+    --menu: #fdebd8;
+    --botones: #d07e76;
+    --letra: #6d3630;
+    --violeta: #642bff;
+    --gris: rgb(100, 100, 100);
+    --rosa: #e91e63;
+}
+
+/*Auto scrol*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+section[id]{
+    scroll-margin-top: 70px;
+}
+
+body{
+    background-color: var(--principal);
+    color: var(--letra);
+}
+
+img{
+    max-width: 100%;
+}
+
+/*Tamaño de contenedor general, cambiar individualmete si lo necesito*/
+
+.container{
+    max-width: 1100px;
+    /*0 arriba y abajo - Izq y der automatico al centro*/
+    margin: 0 auto;
+}
+
+/*Menu-Barra*/
+.menu{
+    /* position: fixed; */
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100000;
+    background-color: var(--menu);
+}
+
+.menu .logo{
+    padding: 0 70px;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--letra);
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 15px;
+    padding: 20px;
+    color: var(--letra);
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: violet;
+}
+
+/*Todo esto es para cuando se despliegue la version de celular*/
+#menu{
+    /*Para q no aparezca el INPUT*/
+    display: none;
+}
+
+.menu-icon{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+/**DIV FOOTER - Info y redes sociales*/
+
+.footer-info{
+    padding: 50px;
+    text-align: center;
+    background-color: var(--menu);
+}
+
+.footer-info1{
+    display: flex;
+    text-align: left;
+    gap: 250px;
+    justify-content: center;
+}
+
+.footer-text p{
+    font-size: 1.1rem;
+}
+
+/*Redes sociales*/
+
+.footer-redes1{
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.footer-redes1 a{
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: var(--letra);
+    color: var(--menu);
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+
+.footer-redes1 a:hover{
+    transform: scale(1.2);
+    background-color: var(--menu);
+    color: var(--letra);
+}
+
+/**FOOTER**/
+footer{
+    text-align: center;
+    background-color: var(--letra);
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    gap: 50px;
+}
+
+footer a{
+    font-family: var(--menu);
+    text-decoration: none;
+    color: var(--principal);
+}
+
+footer i{
+    margin: 0 auto;
+}
+
+footer p{
+    color: var(--principal);
+    font-size: 1rem;
+}

@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --header-font: "EB Garamond";
+    --font-general: "Playfair Display", serif;
+    --font-text: "Poppins", sans-serif;
+    --principal: #fdf4e3;
+    --menu: #fdebd8;
+    --botones: #d07e76;
+    --letra: #6d3630;
+    --violeta: #642bff;
+    --gris: rgb(100, 100, 100);
+    --rosa: #e91e63;
+}
+
+/*Auto scrol*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+section[id]{
+    scroll-margin-top: 70px;
+}
+
+body{
+    background-color: var(--principal);
+    color: var(--letra);
+}
+
+img{
+    max-width: 100%;
+}
+
+/*Tamaño de contenedor general, cambiar individualmete si lo necesito*/
+
+.container{
+    max-width: 1100px;
+    /*0 arriba y abajo - Izq y der automatico al centro*/
+    margin: 0 auto;
+}
+
+/*Menu-Barra*/
+.menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100000;
+    background-color: var(--menu);
+}
+
+.menu .logo{
+    padding: 0 70px;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--letra);
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 15px;
+    padding: 20px;
+    color: var(--letra);
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: violet;
+}
+
+/*Todo esto es para cuando se despliegue la version de celular*/
+#menu{
+    /*Para q no aparezca el INPUT*/
+    display: none;
+}
+
+.menu-icon{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+/* PORTADA */
+.header-tittle{
+    background-image: linear-gradient( rgba(0,0,0, 0.5), rgba(0,0,0, 0.5) ), url(img/web-portada.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-tittle h1{
+    font-family: var(--font-general);
+    font-size: 5rem;
+}
+
+.header-tittle p{
+    font-family: var(--font-general);
+    font-size: 1.5rem;
+    padding: 0 500px;
+}
+
+/* Sitios Web */
+.web-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 200px auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.web-img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.web-img img{
+    width: 700px;
+}
+
+.web-title {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding-right: 350px;
+}
+
+.web-title h2{
+    font-size: 3.4rem;
+    font-family: var(--font-general);
+}
+
+.web-title h3{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+
+}
+
+.web-title p{
+    font-size: 1rem;
+}
+
+.web-title p::before{
+    content: '*';
+}
+
+/* FORMA DE TRABAJO */
+.work-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--letra);
+    color: white;
+    position: relative;
+}
+
+.work-text{
+    padding: 0 300px;
+}
+
+.work-img{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.work-img img{
+    width: 500px;
+}
+
+/* MUESTRA DE LANDING */
+.muestras-content{
+    text-align: center;
+    padding: 0 150px;
+}
+
+.mues-tittle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.muestras-content h2{
+    font-family: var(--font-general);
+    font-size: 3.2rem;
+    padding: 50px 0;
+}
+
+.line-muestras{
+    height: 10px;
+    width: 250px;
+    background-color: var(--letra);
+    border-radius: 15px;
+}
+
+.muestras-img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.img-1 img{
+    transition: .5s;
+    border-radius: 25px;
+    background: linear-gradient(0, 0, 0, 0.5);
+}
+
+/* No puedo colocar este al mismo tiempo que el hover que muestra el boton
+.img-1 img:not(:hover){
+    filter: grayscale(100%);
+} */
+
+.muestras-img img:hover{
+    transform: scale(1.1);
+} 
+
+.img-1{
+    position: relative;
+}
+
+.img-1 img{
+    width: 100%;
+}
+
+.content-muestras{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .5s;
+}
+
+.content-muestras:hover{
+    opacity: 1;
+}
+
+.content-muestras a{
+    background-color: var(--rosa);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+/* CONSULTAS */
+.consulta-content{
+    background-image: url(img/lugares2.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    text-align: center;
+    position: relative;
+
+    margin: 100px auto;
+}
+
+.lug-text{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.lug-text h2{
+    font-size: 2.5rem;
+    font-family: var(--font-general);
+    padding-bottom: 25px;
+}
+
+.lug-text a{
+    background-color: var(--botones);
+    font-size: 1.5rem;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+
+.lug-text a:hover{
+    background-color: white;
+    color: var(--botones);
+    scale: 1.02;
+    transform: translateY(10px)
+}
+
+.lug-text p{
+    padding: 0 600px 25px 600px;
+}
+
+/**DIV FOOTER - Info y redes sociales*/
+
+.footer-info{
+    padding: 50px;
+    text-align: center;
+    background-color: var(--menu);
+}
+
+.footer-info1{
+    display: flex;
+    text-align: left;
+    gap: 250px;
+    justify-content: center;
+}
+
+.footer-text p{
+    font-size: 1.1rem;
+}
+
+/*Redes sociales*/
+
+.footer-redes1{
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.footer-redes1 a{
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: var(--letra);
+    color: var(--menu);
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+
+.footer-redes1 a:hover{
+    transform: scale(1.2);
+    background-color: var(--menu);
+    color: var(--letra);
+}
+
+/**FOOTER**/
+footer{
+    text-align: center;
+    background-color: var(--letra);
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    gap: 50px;
+}
+
+footer a{
+    font-family: var(--menu);
+    text-decoration: none;
+    color: var(--principal);
+}
+
+footer i{
+    margin: 0 auto;
+}
+
+footer p{
+    color: var(--principal);
+    font-size: 1rem;
+}

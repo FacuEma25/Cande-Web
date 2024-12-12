@@ -286,7 +286,7 @@ main{
 }
 
 .box-cartel{
-    background-color: var(--violeta);
+    background-color: red;
     color: white;
     padding: 20px;
     border-radius: 10px;
@@ -309,7 +309,6 @@ main{
 }
 
 .cartel-3{
-    background-color: black;
     position: absolute;
     left: 1520px;
     bottom: -30px;
