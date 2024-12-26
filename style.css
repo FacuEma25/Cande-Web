@@ -65,14 +65,6 @@ img{
     background-color: var(--menu);
 }
 
-/* .menu .logo{
-    padding: 0 70px;
-    font-weight: 700;
-    font-size: 30px;
-    color: var(--letra);
-    /*Agregarle borde derecho
-} */
-
 .menu .logo{
     padding: 0 70px;
     font-weight: 700;
@@ -113,7 +105,7 @@ img{
 
 /* MENU VERTICAL */
 .menu-vertical{
-    position: absolute;
+    position: fixed;
     display: none;
     width: 200px;
     background-color: var(--menu);
@@ -142,7 +134,6 @@ header{
 
 .header-content{
     padding: 50px 0 0 0;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -215,10 +206,6 @@ p{
 }
 
 /*SERVICIOS*/
-
-/* .services-content {
-    padding: 100px;
-} */
 
 .services-content{
     padding: 60px 0;

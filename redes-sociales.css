@@ -438,6 +438,11 @@ main{
     content: '*';
 }
 
+.trabajo-content .img-trabajo img{
+    position: relative;
+    top: 25px;
+}
+
 /* FINAL */
 .lugares-content{
     background-image: url(img/lugares2.png);
@@ -811,6 +816,12 @@ footer p{
         text-align: center;
         padding: 0 20px;
     }
+
+    .trabajo-content .img-trabajo img{
+        position: relative;
+        top: 0px;
+    }
+    
 
     .footer-info1{
         display: flex;
