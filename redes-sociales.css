@@ -106,12 +106,12 @@ img{
 }
 
 /* MENU VERTICAL */
-.menu-vertical{
+/* .menu-vertical{
     position: absolute;
     display: none;
     width: 200px;
     background-color: var(--menu);
-}
+} */
 
 .menu-horizonal li:hover .menu-vertical{
     display: block;
